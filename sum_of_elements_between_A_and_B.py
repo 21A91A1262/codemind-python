@@ -1,8 +1,8 @@
 n=int(input())
-l=list(map(int,input().split()))
+a=list(map(int,input().split()))
 x,y=map(int,input().split())
-s=0
-for i in l:
+c=0
+for i in a:
     if(i>=x and i<=y):
-        s=s+i
-print(s)
+        c+=i
+print(c)
