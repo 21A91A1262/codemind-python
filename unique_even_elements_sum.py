@@ -1,8 +1,11 @@
 n=int(input())
-m=list(map(int,input().split()))
-k=set(m)
-s=0
-for i in  k:
-    if(i%2==0):
-        s=s+i
-print(s)
+sum=0
+a=list(map(int,input().split()))
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+for j in range(len(b)):
+    if(b[j]%2==0):
+        sum=sum+b[j]
+print(sum)
