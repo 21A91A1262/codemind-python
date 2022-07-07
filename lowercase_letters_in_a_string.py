@@ -1,6 +1,7 @@
-n=str(input())
-c=0
+n=input()
+b=[]
 for i in n:
-    if ord(i)>=97 and ord(i)<=122:
-      c+=1
-print(c)
+    if i.islower():
+        b.append(n)
+print(len(b))       
+    
