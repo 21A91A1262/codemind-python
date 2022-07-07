@@ -1,8 +1,6 @@
-import math
-s=input()
-s.lower()
-v=s[::-1]
-if v.lower()==s.lower() :
-    print(True)
+n=str(input()).lower()
+k=n[::-1]
+if(n==k):
+    print("True")
 else:
-    print(False)
+    print("False")
