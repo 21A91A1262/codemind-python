@@ -1,6 +1,6 @@
-n=str(input())
-c=0
+n=input()
+b=[]
 for i in n:
-    if ord(i)>=65 and ord(i)<=90:
-      c+=1
-print(c)
+    if i.isupper():
+        b.append(n)
+print(len(b))
