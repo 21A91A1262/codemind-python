@@ -1,10 +1,9 @@
 n=input()
-k=n.lower()
+n=n.lower()
 b=[]
-for i in k:
-    if k.count(i)==1 and i!=" ":
+for i in n:
+    if i not in b and i!=' ':
         b.append(i)
 b=sorted(b)
 for j in b:
     print(j,end='')
-        
